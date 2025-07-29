@@ -1,0 +1,53 @@
+scn DSSQDifficultyDamageMultipliersQuestScript
+
+; Mad ObScript Extender
+; Dicene Console Utils
+
+float fQuestDelayTime
+float fDifficultyDamageMultiplier
+float fCheckedMCM
+float fLastCheckedMCM
+float fNewDifficultyDamageMultiplierNovice
+float fNewDifficultyDamageMultiplierApprentice
+float fNewDifficultyDamageMultiplierJourneyman
+float fNewDifficultyDamageMultiplierExpert
+float fNewDifficultyDamageMultiplierMaster
+
+begin GameMode
+	set fQuestDelayTime to 0.5
+	set fCheckedMCM to DSfDifficultyDamageMultiplier
+	if fCheckedMCM != fLastCheckedMCM
+		set fDifficultyDamageMultiplier to fCheckedMCM
+		set fNewDifficultyDamageMultiplierNovice to fDifficultyDamageMultiplier * -1
+		set fNewDifficultyDamageMultiplierApprentice to fDifficultyDamageMultiplier * -0.5
+		set fNewDifficultyDamageMultiplierJourneyman to fDifficultyDamageMultiplier * 0.3
+		set fNewDifficultyDamageMultiplierExpert to fDifficultyDamageMultiplier * 0.5
+		set fNewDifficultyDamageMultiplierMaster to fDifficultyDamageMultiplier
+		if DSfNewDifficultyDamageMultiplierNovice != fNewDifficultyDamageMultiplierNovice
+			set DSfNewDifficultyDamageMultiplierNovice to fNewDifficultyDamageMultiplierNovice
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageDealtMultiplierNovice ((GetGlobalValue DSfNewDifficultyDamageMultiplierNovice))"
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageTakenMultiplierNovice ((GetGlobalValue DSfNewDifficultyDamageMultiplierNovice))"
+		endif
+		if DSfNewDifficultyDamageMultiplierApprentice != fNewDifficultyDamageMultiplierApprentice
+			set DSfNewDifficultyDamageMultiplierApprentice to fNewDifficultyDamageMultiplierApprentice
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageDealtMultiplierApprentice ((GetGlobalValue DSfNewDifficultyDamageMultiplierApprentice))"
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageTakenMultiplierApprentice ((GetGlobalValue DSfNewDifficultyDamageMultiplierApprentice))"
+		endif
+		if DSfNewDifficultyDamageMultiplierJourneyman != fNewDifficultyDamageMultiplierJourneyman
+			set DSfNewDifficultyDamageMultiplierJourneyman to fNewDifficultyDamageMultiplierJourneyman
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageDealtMultiplierJourneyman ((GetGlobalValue DSfNewDifficultyDamageMultiplierJourneyman))"
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageTakenMultiplierJourneyman ((GetGlobalValue DSfNewDifficultyDamageMultiplierJourneyman))"
+		endif
+		if DSfNewDifficultyDamageMultiplierExpert != fNewDifficultyDamageMultiplierExpert
+			set DSfNewDifficultyDamageMultiplierExpert to fNewDifficultyDamageMultiplierExpert
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageTakenMultiplierExpert ((GetGlobalValue DSfNewDifficultyDamageMultiplierExpert))"
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageDealtMultiplierExpert ((GetGlobalValue DSfNewDifficultyDamageMultiplierExpert))"
+		endif
+		if DSfNewDifficultyDamageMultiplierMaster != fNewDifficultyDamageMultiplierMaster
+			set DSfNewDifficultyDamageMultiplierMaster to fNewDifficultyDamageMultiplierMaster
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageTakenMultiplierMaster ((GetGlobalValue DSfNewDifficultyDamageMultiplierMaster))"
+			Message "ConsoleCommand SetGameSetting fDifficultyDamageDealtMultiplierMaster ((GetGlobalValue DSfNewDifficultyDamageMultiplierMaster))"
+		endif
+		set fLastCheckedMCM to fCheckedMCM
+	endif
+end

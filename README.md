@@ -4,17 +4,26 @@
 1.0 
 * Initial Release
 
+1.1 
+* Updated description of setting to fit ObRe. Changed how the command is processed in the Ini file. no longer relies on an ObScript watcher
+* No longer requires an ESP, just the ini file. 
+
 ## Description
-![Difficulty Slider](/image/Difficulty_Slider.png "Difficulty Slider")
+
+* Note: This will still affect damage done and received in the ObRe 1.2 patch as this mod does not, and will never, change actual difficulty settings, and only changes the damage multiplier the game uses to calculate damage done.
 
 * Mod Configuration Menu (MCM) for controlling the Difficulty Damage Multiplier
-* Supports values between 0.1 and 20
-* You can check the console for the most recent values as they are printed there when the script runs. This also verifies if it's working. 
+* Supports values between -20 and 20
 
 1. fDifficultyDamageMultiplier
-	* Default: 5.00
-	* Description: The difficulty slider affects how much damage the player does in combat, and how much damage they receive. Damage of all types, magical and mundane, is affected by the slider. This multiplier is the maximum amount the damage the player can do if the slider is set all the way to easy. 
-	* It divides the amount of damage done to the player by the same value. If the slider is set all the way to hard, these values are inverted. This multiplier is reduced when the slider is set to in between values. The difficulty slider can be made more subtle by lowering this value, and more extreme by raising it.
+* Default: 5.00
+* Description=Default: 5.0 Min: -20 Max: 20 Increment: 0.1. | Difficulty affects how much damage the player does in combat, and how much damage they receive. Damage of all types is affected by Difficulty. This multiplier is the maximum amount the damage the player can do when difficulty is set to Novice. It divides the amount of damage done to the player by the same value. Difficulty Settings can be made more subtle by lowering this value, and more extreme by raising it.
+
+(Player will receive 1/5th normal damage and deal 5x normal damage on Novice).
+(Player will receive 1/3.5th normal damage and deal 3.5x normal damage on Apprentice).
+(Player will receive 1x normal damage and deal 1x normal damage on Adept). 
+(Player will receive 3.5x normal damage and deal 1/3.5th normal damage on Apprentice).
+(Player will receive 5x normal damage and deal 1/5th normal damage on Master).
 
 ### Prerequisites
 1. [UE4SS](https://www.nexusmods.com/oblivionremastered/mods/32)
