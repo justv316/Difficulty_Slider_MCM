@@ -14,106 +14,130 @@
 
 
 1. fDifficultyDamageTakenMultiplierMaster = 5.0
-*	Master Damage Taken
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (5.0+1)*n
-*	Fn = 6.0n
-*	Master Damage Taken = 6x Normal Damage
+```
+	Master Damage Taken
+	n = Damage
+	Fn = (DDM+1)*n
+	Fn = (5.0+1)*n
+	Fn = 6.0n
+	Master Damage Taken = 6x Normal Damage
+```
 
 1. fDifficultyDamageDealtMultiplierMaster = 5.0
-*	Master Damage Dealt
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(5+1))n
-*	Fn = (1/6)n
-*	Fn = 0.167n
-*	Master Damage Dealt = 0.167x Normal Damage
+```
+	Master Damage Dealt
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(5+1))n
+	Fn = (1/6)n
+	Fn = 0.167n
+	Master Damage Dealt = 0.167x Normal Damage
+```
 
 2. fDifficultyDamageTakenMultiplierExpert = 2.5
-*	Expert Damage Taken
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (2.5+1)*n
-*	Fn = 3.5n
-*	Expert Damage Taken = 3.5x Normal Damage
+```
+ 	Expert Damage Taken
+ 	n = Damage
+ 	Fn = (DDM+1)*n
+ 	Fn = (2.5+1)*n
+ 	Fn = 3.5n
+ 	Expert Damage Taken = 3.5x Normal Damage
+```
 
 2. fDifficultyDamageDealtMultiplierExpert = 2.5
-*	Expert Damage Dealt
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(2.5+1))n
-*	Fn = (1/3.5)n
-*	Fn = 0.286n
-*	Expert Damage Dealt = 0.286x Normal Damage
+```
+	Expert Damage Dealt
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(2.5+1))n
+	Fn = (1/3.5)n
+	Fn = 0.286n
+	Expert Damage Dealt = 0.286x Normal Damage
+```
 
 3. fDifficultyDamageTakenMultiplierJourneyman = 1.5
-*	Journeyman Damage Taken
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (1.5+1)*n
-*	Fn = 2.5n
-*	Journeyman Damage Taken = 2.5x Normal Damage
+```
+	Journeyman Damage Taken
+	n = Damage
+	Fn = (DDM+1)*n
+	Fn = (1.5+1)*n
+	Fn = 2.5n
+	Journeyman Damage Taken = 2.5x Normal Damage
+```
 
 3. fDifficultyDamageDealtMultiplierJourneyman = 1.5
-*	Journeyman Damage Dealt
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(1.5+1))n
-*	Fn = (1/2.5)n
-*	Fn = 0.4n
-*	Journeyman Damage Dealt = 0.4x Normal Damage
+```
+	Journeyman Damage Dealt
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(1.5+1))n
+	Fn = (1/2.5)n
+	Fn = 0.4n
+	Journeyman Damage Dealt = 0.4x Normal Damage
+```
 
 4. fDifficultyDamageTakenMultiplierAdept = 0.0
-*	Adept Damage Taken
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (0+1)*n
-*	Fn = 1n
-*	Adept Damage Taken = 1x Normal Damage
+```
+	Adept Damage Taken
+	n = Damage
+	Fn = (DDM+1)*n
+	Fn = (0+1)*n
+	Fn = 1n
+	Adept Damage Taken = 1x Normal Damage
+```
 
 4. fDifficultyDamageDealtMultiplierAdept = 0.0
-*	Adept Damage Dealt
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(0+1))n
-*	Fn = (1/1)n
-*	Fn = 1n
-*	Adept Damage Dealt = 1x Normal Damage
+```
+	Adept Damage Dealt
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(0+1))n
+	Fn = (1/1)n
+	Fn = 1n
+	Adept Damage Dealt = 1x Normal Damage
+```
 
 5. fDifficultyDamageTakenMultiplierApprentice = -2.5
-*	Apprentice Damage Taken
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(2.5+1))n
-*	Fn = (1/3.5)n
-*	Fn = 0.286n
-*	Apprentice Damage Taken = 0.286x Normal Damage
+```
+	Apprentice Damage Taken
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(2.5+1))n
+	Fn = (1/3.5)n
+	Fn = 0.286n
+	Apprentice Damage Taken = 0.286x Normal Damage
+```
 
 5. fDifficultyDamageDealtMultiplierApprentice = -2.5
-*	Apprentice Damage Dealt
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (2.5+1)*n
-*	Fn = 3.5n
-*	Apprentice Damage Dealt = 3.5x Normal Damage
+```
+	Apprentice Damage Dealt
+	n = Damage
+	Fn = (DDM+1)*n
+	Fn = (2.5+1)*n
+	Fn = 3.5n
+	Apprentice Damage Dealt = 3.5x Normal Damage
+```
 	
-6. fDifficultyDamageDealtMultiplierNovice = -5.0
-*	Novice Damage Taken
-*	n = Damage
-*	Fn = (1/(DDM+1))n
-*	Fn = (1/(5+1))n
-*	Fn = (1/6)n
-*	Fn = 0.167n
-*	Novice Damage Taken = 0.167x Normal Damage
+6. `fDifficultyDamageDealtMultiplierNovice = -5.0`
+```
+	Novice Damage Taken
+	n = Damage
+	Fn = (1/(DDM+1))n
+	Fn = (1/(5+1))n
+	Fn = (1/6)n
+	Fn = 0.167n
+	Novice Damage Taken = 0.167x Normal Damage
+```
 	
-6. fDifficultyDamageTakenMultiplierNovice = -5.0
-*	Novice Damage Dealt
-*	n = Damage
-*	Fn = (DDM+1)*n
-*	Fn = (5.0+1)*n
-*	Fn = 6.0n
-*	Novice Damage Dealt = 6x Normal Damage
+6. `fDifficultyDamageTakenMultiplierNovice = -5.0`
+```
+	Novice Damage Dealt
+	n = Damage
+	Fn = (DDM+1)*n
+	Fn = (5.0+1)*n
+	Fn = 6.0n
+	Novice Damage Dealt = 6x Normal Damage
+```
 
 ### Prerequisites
 1. [UE4SS](https://www.nexusmods.com/oblivionremastered/mods/32)
@@ -139,16 +163,18 @@
 
 2. Manual Method
 	0. While In-game, press the ~ key to open the console. Type each command and press enter.
-		`SetGameSetting fDifficultyDamageDealtMultiplierNovice -5`
-		`SetGameSetting fDifficultyDamageTakenMultiplierNovice -5`
-		`SetGameSetting fDifficultyDamageDealtMultiplierApprentice -2.5`
-		`SetGameSetting fDifficultyDamageTakenMultiplierApprentice -2.5`
-		`SetGameSetting fDifficultyDamageDealtMultiplierJourneyman 1.5`
-		`SetGameSetting fDifficultyDamageTakenMultiplierJourneyman 1.5`
-		`SetGameSetting fDifficultyDamageTakenMultiplierExpert 2.5`
-		`SetGameSetting fDifficultyDamageDealtMultiplierExpert 2.5`
-		`SetGameSetting fDifficultyDamageTakenMultiplierMaster 5`
-		`SetGameSetting fDifficultyDamageDealtMultiplierMaster 5`
+		```
+		SetGameSetting fDifficultyDamageDealtMultiplierNovice -5
+		SetGameSetting fDifficultyDamageTakenMultiplierNovice -5
+		SetGameSetting fDifficultyDamageDealtMultiplierApprentice -2.5
+		SetGameSetting fDifficultyDamageTakenMultiplierApprentice -2.5
+		SetGameSetting fDifficultyDamageDealtMultiplierJourneyman 1.5
+		SetGameSetting fDifficultyDamageTakenMultiplierJourneyman 1.5
+		SetGameSetting fDifficultyDamageTakenMultiplierExpert 2.5
+		SetGameSetting fDifficultyDamageDealtMultiplierExpert 2.5
+		SetGameSetting fDifficultyDamageTakenMultiplierMaster 5
+		SetGameSetting fDifficultyDamageDealtMultiplierMaster 5
+		```
 
 ## Credits
 1. Utilizes ObScript Extender created by [MadAborModding](https://next.nexusmods.com/profile/MadAborModding)
