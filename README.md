@@ -163,18 +163,16 @@
 
 2. Manual Method
 	0. While In-game, press the ~ key to open the console. Type each command and press enter.
-		```
-		SetGameSetting fDifficultyDamageDealtMultiplierNovice -5
-		SetGameSetting fDifficultyDamageTakenMultiplierNovice -5
-		SetGameSetting fDifficultyDamageDealtMultiplierApprentice -2.5
-		SetGameSetting fDifficultyDamageTakenMultiplierApprentice -2.5
-		SetGameSetting fDifficultyDamageDealtMultiplierJourneyman 1.5
-		SetGameSetting fDifficultyDamageTakenMultiplierJourneyman 1.5
-		SetGameSetting fDifficultyDamageTakenMultiplierExpert 2.5
-		SetGameSetting fDifficultyDamageDealtMultiplierExpert 2.5
-		SetGameSetting fDifficultyDamageTakenMultiplierMaster 5
-		SetGameSetting fDifficultyDamageDealtMultiplierMaster 5
-		```
+		* SetGameSetting fDifficultyDamageDealtMultiplierNovice -5
+		* SetGameSetting fDifficultyDamageTakenMultiplierNovice -5
+		* SetGameSetting fDifficultyDamageDealtMultiplierApprentice -2.5
+		* SetGameSetting fDifficultyDamageTakenMultiplierApprentice -2.5
+		* SetGameSetting fDifficultyDamageDealtMultiplierJourneyman 1.5
+		* SetGameSetting fDifficultyDamageTakenMultiplierJourneyman 1.5
+		* SetGameSetting fDifficultyDamageTakenMultiplierExpert 2.5
+		* SetGameSetting fDifficultyDamageDealtMultiplierExpert 2.5
+		* SetGameSetting fDifficultyDamageTakenMultiplierMaster 5
+		* SetGameSetting fDifficultyDamageDealtMultiplierMaster 5
 
 ## Credits
 1. Utilizes ObScript Extender created by [MadAborModding](https://next.nexusmods.com/profile/MadAborModding)
