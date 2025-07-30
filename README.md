@@ -143,6 +143,8 @@
 1. [UE4SS](https://www.nexusmods.com/oblivionremastered/mods/32)
 	1. [Mad OBScript Extender v2.0a or Later](https://www.nexusmods.com/oblivionremastered/mods/4819)
 	2. [Mad Config Menu MCM v3.6 or Later](https://www.nexusmods.com/oblivionremastered/mods/4810)
+2. [OBSE](https://www.nexusmods.com/oblivionremastered/mods/282)
+	1. [NL-Tag Remover](https://www.nexusmods.com/oblivionremastered/mods/473)
 	
 ### Installation
 0. Install Prerequisites
